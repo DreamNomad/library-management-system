@@ -1,0 +1,14 @@
+spring:
+  jackson:
+    # 配置序列化不为空的字段
+    default-property-inclusion: NON_NULL
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      logic-delete-value: NOW()
+      logic-not-delete-value: 'NULL'
+  configuration:
+    # 打印sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

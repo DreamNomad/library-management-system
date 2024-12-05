@@ -1,2 +1,2 @@
 # library-management-system
-图书管理后台练手项目
+图书管理后台项目
